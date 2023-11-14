@@ -1,0 +1,226 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+    text-align: center;
+}
+
+header{
+    /* display: flex; */
+   text-align: center;
+   color: aliceblue;
+   /* text-decoration-line: underline ; */
+   text-shadow: 0px 2px 2px rgb(22, 62, 72);
+   outline: rgb(25, 79, 92);
+}
+#discription{
+    display: none;
+}
+textarea{
+    height: 300px;
+    width: 100%;
+    outline: none;
+}
+.ready{
+    height:30px;
+    width: 100px;
+    border: none;
+    border-radius: 30%;
+    background-color: rgb(22, 62, 72);
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    left: 600px;
+    position: absolute;
+}
+body{
+    /* background-image: linear-gradient(rgb(239 217 160), beige); */
+    background-color: rgb(166, 180, 161);;
+    background-repeat: no-repeat;
+}
+select
+{
+    height: 25px;
+    border-radius: 5px;
+    outline: none;
+    transform: translate(35px, 5px);
+}
+#select
+{
+    transform: translate(27px,9.5px)
+}
+form{
+    display: flex;
+}
+p{
+    transform: translate(56px,9.5px);
+    color: black;
+}
+#duedate{
+    transform: translate(62px,5.5px);
+    height: 22px;
+    outline: none;
+}
+#taskbox
+{
+    border: 1.25px solid grey;    
+margin-top: 3%;
+margin-left: 16%;
+margin-right: 25%;
+margin-bottom: 10.5%;
+height: 450px;
+width: 850px;
+background-color: white;
+color: aliceblue;
+border-radius: 5px;
+box-shadow: 3px 3px 5px 1px rgb(114, 114, 105);
+}
+.navigate{
+    display: flex;
+    justify-content: space-between;
+}
+#totaltask, #taskleft, #taskdone
+{
+    width: 500px;
+    height: 30px;
+    background-color: rgb(235, 235, 209);
+    color: black;
+    /* box-shadow: 0px 0px 2px 2px grey; */
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 5px  ;
+    
+}
+#totaltask:hover
+{
+    background-color: #fdf2b3;
+    /* box-shadow: 0px 0px 2px 2px #fcee9f; */
+    color: black;
+}
+ #taskleft:hover
+{
+    background-color: #d1eaed;
+    /* box-shadow: 0px 0px 2px 2px #b2e2e8; */
+    color: black;
+}
+ #taskdone:hover
+{
+    background-color: #ffdada;
+    /* box-shadow: 0px 0px 2px 2px #edbebe; */
+    color: black;
+}
+#totaltask:active
+{
+    background-color: #fdf2b3;
+    box-shadow: 0px 0px 2px 2px #fcee9f;
+    transform: translateY(4px);
+}
+ #taskleft:active
+{
+    background-color: #d1eaed;
+    box-shadow: 0px 0px 2px 2px #b2e2e8;
+    transform: translateY(4px);
+}
+#taskdone:active
+{
+    background-color: #ffdada;
+    box-shadow: 0px 0px 2px 2px #edbebe;
+    transform: translateY(4px);
+}
+img
+{
+    height: 30px;
+    width: 30px;
+    border-radius: 25%;
+}
+.add_task
+{
+    border: none;
+   border-radius: 50%;
+    background-color: none;
+    transform: translate(83px,2px);
+}
+.add_task:active
+{
+    /* transform: translatex(4px);  */
+}
+#getinput{
+    width: 400px;
+    height: 22px;
+    outline: none;
+    transform: translate(4px,5.5px);
+    /* margin: 5px; */
+}
+.box{
+    background-color: rgb(235, 235, 209);
+    border-radius: 5px;
+    height: 70px;
+    border-bottom: 1.5px solid rgb(190, 187, 187);
+}
+#showtask{
+    /* background-color: beige; */
+    border-radius: 5px;
+    width:  560px;
+    /* word-wrap: normal; */
+    overflow: hidden;
+}
+#showtaskleft{
+    display: none;
+    height: 800px;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 24px;
+    width: 24px; 
+   background-image: url(unchecked.png);
+  background-size: cover;
+  background-position: center;
+  transform: translate(-29px, -5px);
+  /* top: 12px;
+  left: 8px; */
+}
+li{
+    list-style-type:none;
+    list-style-position: inside;
+    color: black;
+    margin: 10px;
+    transform: translate(25px, 0px);
+    user-select: none;
+    cursor: pointer;
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* pointer-events: none; */
+}
+ul li.checked
+{
+    color: grey;
+    text-decoration: line-through;
+}
+ul li.checked::before
+{
+    content: '';
+    position: absolute;
+    height: 24px;
+    width: 24px; 
+   background-image: url(tick.png);
+  background-size: cover;
+  background-position: center;
+  transform: translate(-29px, -5px);
+}
+ul li span{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px; 
+   background-image: url(remove.png);
+  background-size: cover;
+  background-position: center;
+  transform: translate(58px, -1px);
+  /* /* top: 12px; */
+  left:394px; 
+  pointer-events:painted;
+}
