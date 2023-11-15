@@ -127,7 +127,7 @@ element.addEventListener("click",function(eve){
       console.log("you are here")
       descriptionbox.style.display="block"
       element.style.display="none"
-      alert("Press 'ENTER KEY' when you are done with your Discrption.")
+      alert("Press 'ENTER KEY' when you are done with your Description.")
       text.addEventListener("keypress",function(e)
       {
          if(e.key==="Enter")
