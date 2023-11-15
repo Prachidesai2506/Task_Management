@@ -206,7 +206,7 @@ function addlefttask()
       let li=document.createElement("div");
       li.style.color="black"
       var arr=JSON.parse(window.localStorage.getItem(j))
-      var array="\n"+(j+1)+") Title : "+arr.title+"\nAssigned : "+arr.assigned+"\nDue-Date : "+arr.DueDate+"\nCurrent-Date : "+arr.currDate+"\nStatus : "+arr.status+"\nDiscription : "+arr.discript+"\n";
+      var array="\n"+(j+1)+") Title : "+arr.title+"\nAssigned : "+arr.assigned+"\nDue-Date : "+arr.DueDate+"\nCurrent-Date : "+arr.currDate+"\nStatus : "+arr.status+"\nDescription : "+arr.discript+"\n";
       li.innerText=array
       if(arr.status="In-progress")
       {
